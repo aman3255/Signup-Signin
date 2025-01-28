@@ -1,0 +1,23 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client { // This is the Prisma Client generator. It is used to generate the Prisma Client that you will use to interact with your database.
+  provider = "prisma-client-js"
+  engineType = "library"
+}
+
+datasource db { // This is the datasource block. It is used to configure the database connection that Prisma will use to connect to your database.
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Auth{
+  id Int @id @default(autoincrement())
+  name String?
+  email String @unique
+  password String
+}
+

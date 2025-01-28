@@ -1,0 +1,30 @@
+name = "signup-signin"
+main = "src/index.ts"
+compatibility_date = "2025-01-28"
+
+# compatibility_flags = [ "nodejs_compat" ]
+
+[vars]
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiNGQ0ZTVjYjYtZjllZi00ZDgxLWJmZWEtOGFiYzM4YWEzNjhjIiwidGVuYW50X2lkIjoiNjQ1NzJjODBmY2I3M2IyNWRmZTFhODhjN2E2NjI1YmQ4NWY0ZmIyMmQyZTQ1ZTQzM2U2ZWNjMTY2NTk4MjUyNSIsImludGVybmFsX3NlY3JldCI6IjhiMWVhM2IyLWMwN2YtNGE4MC1iODZhLTZmZjBmNjI1ZTEzZCJ9.dt0pfzwDs0yIwfOGTYOfZRnM4--wHXe5g2jGXRgPC2I"
+JWT_SECRET = "amanjwtsecret"
+
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"
+
+# [observability]
+# enabled = true
+# head_sampling_rate = 1
